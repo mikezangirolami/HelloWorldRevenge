@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <modules>
+        <Zangirolami_Helloworldrevenge>
+            <version>0.1.0</version>
+        </Zangirolami_Helloworldrevenge>
+    </modules>
+    <global>
+        <blocks>
+            <zangirolami_helloworldrevenge>
+                <class>Zangirolami_Helloworldrevenge_Block</class>
+            </zangirolami_helloworldrevenge>
+        </blocks>
+        <helpers>
+            <zangirolami_helloworldrevenge>
+                <class>Zangirolami_Helloworldrevenge_Helper</class>
+            </zangirolami_helloworldrevenge>
+        </helpers>
+        <models>
+            <zangirolami_helloworldrevenge>
+
+            </zangirolami_helloworldrevenge>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <zangirolami_helloworldrevenge>
+                <use>standard</use>
+                <args>
+                    <module>Zangirolami_Helloworldrevenge</module>
+                    <frontName>revenge</frontName>
+                </args>
+            </zangirolami_helloworldrevenge>
+        </routers>
+        <layout>
+            <updates>
+                <zangirolami_helloworldrevenge>
+                    <file>zangirolami_helloworld.xml</file>
+                </zangirolami_helloworldrevenge>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <zangirolami_helloworldrevenge>
+            <configuration>
+                <enabled>1</enabled>
+                <message>Test Message from config.xml</message>
+            </configuration>
+        </zangirolami_helloworldrevenge>
+    </default>
+</config>
