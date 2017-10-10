@@ -13,6 +13,12 @@
  */
 
 class Zangirolami_Helloworldrevenge_Helper_Data extends Mage_Core_Helper_Abstract {
+
+    /**
+     * declaration of const uploadDir
+     */
+    const uploadDir = "helloworldrevengeUpload/";
+
     /**
      * getConfig
      *
@@ -31,5 +37,13 @@ class Zangirolami_Helloworldrevenge_Helper_Data extends Mage_Core_Helper_Abstrac
      */
     public function isEnabled(){
         return $this->getConfig("configuration/enabled");
+    }
+
+    /**
+     * getUploadDir
+     * @return string of the directory of the uploaded images
+     */
+    public function getUploadDir(){
+        return self::uploadDir;
     }
 }

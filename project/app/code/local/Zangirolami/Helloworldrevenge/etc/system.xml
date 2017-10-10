@@ -35,6 +35,21 @@
                             <frontend_type>text</frontend_type>
                             <tooltip>Type in your custom message</tooltip>
                         </message>
+                        <image translate="label">
+                            <label>Load an Image</label>
+                            <comment>Load an Image: JPG, PNG, GIF</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">helloworldrevengeUpload</upload_dir>
+                            <base_url type="media" scope_info="1">helloworldrevengeUpload</base_url>
+                            <tooltip>Load an Image</tooltip>
+                            <depends>
+                                <enabled>1</enabled>
+                            </depends>
+                        </image>
                     </fields>
                 </configuration>
             </groups>

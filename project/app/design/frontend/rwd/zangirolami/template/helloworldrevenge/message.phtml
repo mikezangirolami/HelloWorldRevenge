@@ -7,5 +7,9 @@
         <?php if ($this->getMessage()) : ?>
             <p><?php echo $this->getMessage(); ?></p>
         <?php endif; ?>
+        <hr>
+        <?php if($this->getImageHTML()) : ?>
+            <?= $this->getImageHTML(); ?>
+        <?php endif; ?>
     <?php endif; ?>
 </div>
